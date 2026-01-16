@@ -4,7 +4,7 @@ import { Send, User, Bot, Sparkles, Apple, Activity, Info, Loader2 } from 'lucid
 // --- API Logic (REPLACED GEMINI WITH FASTAPI BACKEND) ---
 const callBackend = async (query) => {
   try {
-    const response = await fetch("http://127.0.0.1:8000/ask", {
+    const response = await fetch("https://nutriai-rag-system.onrender.com/ask", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
