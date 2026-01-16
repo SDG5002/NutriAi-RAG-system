@@ -29,7 +29,7 @@ app = FastAPI(title="Medical RAG API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173","https://nutriai-rag-system.onrender.com"],
+    allow_origins=["http://localhost:5173","https://nutri-ai-rag-system.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
