@@ -18,7 +18,7 @@ const callBackend = async (query) => {
     const data = await response.json();
     return data.answer;
   } catch (e) {
-    return "Server error. Please ensure your local FastAPI backend is running at http://127.0.0.1:8000/ask.";
+    return "Server error. Please ensure your local FastAPI backend is running at https://nutriai-rag-system.onrender.com/ask.";
   }
 };
 
